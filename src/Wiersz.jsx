@@ -4,9 +4,13 @@ function Wiersz(props)
 {
     return(
         <>
-            <tr>
-                {Object.keys(props.dane).map((e) => <td key={e}>{props.dane[e]}</td>)}
-            </tr>
+            <tbody>
+                <tr>
+                {Object.keys(props.dane).map(
+                    (e) => <td key={e} className={e}>{props.dane[e]}</td>
+                    )}
+                </tr>
+            </tbody>
         </>
     );
 };

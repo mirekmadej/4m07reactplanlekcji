@@ -4,9 +4,11 @@ function Naglowek()
 {
     return(
         <>
-            <tr>
+            <thead>
+                <tr className='naglowek'>
                {naglowek.map((e) => <td key={e}>{e}</td>)}
-            </tr>
+               </tr>
+            </thead>
         </>
     )
 };
